@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Bodega de Vinos</title>
+</head>
+
+<body>
+  <div class="container">
+
+  <div class="row" id="item">
+
+    <div class="col-sm-4">
+      <img src="img/vino 1.jpg" class="card-img-top" alt="...">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Petit Verdot</h4>
+          <h6 class="card-text">Cosecha 2015</h6>
+          <p class="card-text">45€</p>
+          <button class="btn btn-primary" id="mibtn"  >Comprar</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <img src="img/vino 1.jpg" class="card-img-top" alt="...">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Artadi El Carretil</h4>
+          <h6 class="card-text">cosecha 2016</h6>
+          <p class="card-text">160€</p>
+          <button class="btn btn-primary" id="mibtn1">Comprar</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <img src="img/vino 1.jpg" class="card-img-top" alt="...">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Cirsion</h4>
+          <h6 class="card-text">cosecha 2010</h6>
+          <p class="card-text">169€</p>
+          <button class="btn btn-primary" id="mibtn2" >Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <hr>
+
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th scope="col">id</th>
+          <th scope="col">Marca</th>
+          <th scope="col">Cosecha</th>
+          <th scope="col">Precio</th>
+        </tr>
+      </thead>
+      <tbody  id="item2"></tbody>
+    </table>
+
+
+
+<!----------------- TEMPLATES -------------->
+    
+
+    <template id="template-carrito">
+      <tr>
+        <th scope="row" ></th>
+        <td></td>
+        <td ></td>
+        <td><span></span></td>
+      </tr>
+    </template>
+
+    <script src="appl.js"></script>
+    <!-- <script type="text/javascript">
+      function actualizar(){location.reload(true);}
+    //Función para actualizar cada 4 segundos(4000 milisegundos)
+      setInterval("actualizar()",4000);
+    </script> -->
+  </div>
+</body>
+
+</html>
